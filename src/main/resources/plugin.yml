@@ -1,0 +1,7 @@
+name: AgentLib
+version: ${project.version}
+main: com.agentdid127.agentlib.spigot.SpigotPlugin
+api-version: 1.13
+authors: [agentdid127]
+description: Plugin Development Library
+website: http://agentdid127.com

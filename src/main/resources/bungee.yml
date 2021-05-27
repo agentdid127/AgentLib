@@ -1,0 +1,6 @@
+name: AgentLib
+version: ${project.version}
+main: com.agentdid127.agentlib.bungee.BungeePlugin
+author: [agentdid127]
+description: Plugin Development Library
+website: http://agentdid127.com

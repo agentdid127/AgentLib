@@ -19,6 +19,8 @@
     <url>http://agentdid127.com</url>
 
     <build>
+        <finalName>AgentLib-${project.version}</finalName>
+        <defaultGoal>clean install</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

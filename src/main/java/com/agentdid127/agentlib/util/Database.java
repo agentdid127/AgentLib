@@ -19,7 +19,6 @@ public class Database {
         String user = config[1];
         String password = config[2];
 
-        new com.mysql.cj.jdbc.Driver();
         ArrayList<String> out = new ArrayList<String>();
         if (type.equals("select")) {
             try (

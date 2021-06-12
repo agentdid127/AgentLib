@@ -13,7 +13,7 @@
 
     <description>Plugin Development Library</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>16</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <url>http://agentdid127.com</url>
@@ -103,27 +103,10 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.bergerkiller.bukkit</groupId>
-            <artifactId>BKCommonLib</artifactId>
-            <version>1.16.3-v1</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sk89q.worldguard</groupId>
-            <artifactId>worldguard-bukkit</artifactId>
-            <version>7.0.5-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.sk89q.worldedit</groupId>
-            <artifactId>worldedit-bukkit</artifactId>
-            <version>7.2.0-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.22</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.md-5</groupId>

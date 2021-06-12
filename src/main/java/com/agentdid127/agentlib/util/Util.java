@@ -1,7 +1,5 @@
 package com.agentdid127.agentlib.util;
 
-import com.mojang.api.profiles.HttpProfileRepository;
-import com.mojang.api.profiles.Profile;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,12 +10,12 @@ import java.util.regex.Pattern;
 
 public class Util {
 
-
+/* Commented out since Mojang added a new account system, which will need to be fixed.
     /**
      * Checks if a UUID is a bedrock UUID
      * @param uuid
      * @return
-     */
+     *
     public static boolean isBedrock(String uuid) {
 
         if (uuid.startsWith("00000000")) return true;
@@ -32,14 +30,14 @@ public class Util {
      * Gets UUID from Player Username
      * @param username
      * @return
-     */
+     *
     public static UUID getUUID(String username) {
         Profile[] profile = repository.findProfilesByNames(username);
         if (profile.length == 1) {
             return UUID.fromString(UUID_PATTERN.matcher(profile[0].getId()).replaceFirst("$1-$2-$3-$4-$5"));
         }
         return null;
-    }
+    }*/
 
     /**
      * Gets byte count of local file

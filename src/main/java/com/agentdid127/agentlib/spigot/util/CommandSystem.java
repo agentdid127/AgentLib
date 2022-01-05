@@ -18,6 +18,7 @@ public class CommandSystem {
     //Instance Variables
     Plugin plugin;
     CommandExecutor commandExecutor;
+    String permission;
 
 
     /**
@@ -26,7 +27,8 @@ public class CommandSystem {
      * @param plugin
      * @param commandExecutor
      */
-    public CommandSystem(Plugin plugin, CommandExecutor commandExecutor) {
+    public CommandSystem(Plugin plugin, CommandExecutor commandExecutor, String masterPermission) {
+        this.permission = masterPermission;
         this.plugin = plugin;
         this.commandExecutor = commandExecutor;
     }
@@ -44,7 +46,7 @@ public class CommandSystem {
     public void registerCommand(String permission, String description, String... aliases) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
         PluginCommand command = getCommand(aliases[0], plugin);
 
-        command.setPermission("studios." + permission);
+        command.setPermission(this.permission + permission);
         command.setDescription(description);
         command.setAliases(Arrays.asList(aliases));
         getCommandMap().register(plugin.getDescription().getName(), command);
